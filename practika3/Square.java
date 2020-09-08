@@ -2,22 +2,15 @@ package ru.mirea.practika3;
 
 public class Square extends Rectangle{
     public Square(){
-        this.color = "red";
-        this.filled = false;
-        this.length = 4.0;
-        this.width = length;
+        super(4.0,4.0);
     }
 
     public Square(double side){
-        this.width = side;
-        this.length = side;
+        super(side, side);
     }
 
     public Square(double side, String color, boolean filled){
-        this.width = side;
-        this.length = side;
-        this.color = color;
-        this.filled = filled;
+        super(side, side, color, filled);
     }
 
     @Override

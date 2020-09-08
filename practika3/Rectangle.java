@@ -4,21 +4,20 @@ public class Rectangle extends Shape {
     protected double width, length;
 
     public Rectangle(){
-        this.color = "red";
-        this.filled = false;
+        super();
         this.width = 2.0;
         this.length = 6.0;
     }
 
     public Rectangle(double width, double length){
+        super();
         this.width = width;
         this.length = length;
     }
     public Rectangle(double width, double length, String color, boolean filled){
+        super(color, filled);
         this.width = width;
         this.length = length;
-        this.color = color;
-        this.filled = filled;
     }
 
     public double getWidth() {

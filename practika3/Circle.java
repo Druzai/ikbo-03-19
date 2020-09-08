@@ -6,19 +6,18 @@ public class Circle extends Shape {
     protected double radius;
 
     public Circle(){
-        this.color = "red";
-        this.filled = false;
+        super();
         this.radius = 1.0;
     }
 
     public Circle(double radius){
+        super();
         this.radius = radius;
     }
 
     public Circle(double radius, String color, boolean filled){
+        super(color, filled);
         this.radius = radius;
-        this.color = color;
-        this.filled = filled;
     }
 
     public double getRadius(){
