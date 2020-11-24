@@ -24,7 +24,7 @@ public class TestStudent_1 {
         }
         System.out.println("Before");
         for (Student student : group1) System.out.println(student);
-        
+
         selectionSort(group1);
 
         System.out.println("\nAfter");
