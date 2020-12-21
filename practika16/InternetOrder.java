@@ -69,12 +69,14 @@ public class InternetOrder implements Order {
         if (front.dish != null) {
             if (front.dish.getName().equals(name)) {
                 front = front.next;
+                size--;
                 return true;
             }
         }
         if (front.drink != null) {
             if (front.drink.getName().equals(name)) {
                 front = front.next;
+                size--;
                 return true;
             }
         }
